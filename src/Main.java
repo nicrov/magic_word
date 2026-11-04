@@ -8,6 +8,16 @@ public class Main {
             System.out.println("Enter a word or letter");
             String s = Input.readString();
             magic.shoot(s);
+        if (magic.wins()){
+            System.out.println("You win ");
+            System.out.print(" " + magic.getHiddenword());
+            gameOver = true;
+        }else {
+            if (magic.losses()){
+                System.out.println("You loose the hidden word is " + magic.getHiddenword());
+                gameOver = true;
+            }
+        }
         }
     }
 }
