@@ -76,8 +76,10 @@ public class MagicWord {
             if (hiddenword.equals(wordOrLetter)) {
                 for (int i = 0; i < correctLetters.length; i++) {
                     correctLetters[i] = true;
-                    fails = MAX_FAILS + 1;
+
                 }
+            }else {
+                fails = MAX_FAILS + 1;
             }
         }
 
